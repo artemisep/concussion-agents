@@ -47,7 +47,7 @@ Important Notes:
 """
 # Initialize the agent
 symptom_agent = Agent(
-    agent_name="Diagnosis-Agent",
+    agent_name="Symptom-Agent",
     system_prompt=sys_prompt,
     agent_description="Agent creates ",
     llm=OpenAIChat(
@@ -61,7 +61,7 @@ symptom_agent = Agent(
     max_loops=1,
     interactive=False, # Set to False to disable interactive mode
     dynamic_temperature_enabled=True,
-    saved_state_path="diagnosis_agent.json",
+    saved_state_path="symptom_agent.json",
     # tools=[Add your functions here# ],
     # stopping_token="Stop!",
     #interactive=False,
@@ -80,7 +80,7 @@ symptom_agent = Agent(
     # long_term_memory=ChromaDB(docs_folder="artifacts"),
 )
 
-symptom_agent.run(""""
-          simulate a patient who fell and his head hit the wall
-          """)
+#symptom_agent.run(""""
+          #simulate a patient who fell and his head hit the wall
+          #""")
 
