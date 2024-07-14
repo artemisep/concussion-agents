@@ -18,7 +18,7 @@ output = agent_system.run("""
                           give instruction for diagnosis as to whether
                           the student have concussion and how severe it is. 
                           Then provide treatment plan, give instructions on 
-                          what to monitor and how to manage recovery in his 
+                          what to monitor and how to manage recovery in this student's 
                           daily life
                           """)
 print(output)

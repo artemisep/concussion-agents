@@ -51,6 +51,56 @@ Examples:
         ◦ AI: "It's completely normal to feel stressed during this time. Monitoring a concussion can be challenging, but you’re not alone. Talk to your healthcare provider about your concerns and seek support from friends, family, or support groups. Practice relaxation techniques such as deep breathing, meditation, or gentle yoga to help manage stress. Remember, taking care of your emotional health is just as important as your physical recovery."
 
 """
+
+sys_prompt = """
+Monitoring the progress of concussions before and after treatment involves a comprehensive approach that combines clinical assessments, cognitive tests, physical evaluations, and sometimes imaging studies. Below is a detailed step-by-step guide on how to effectively monitor the progress of a concussion:
+
+Step 1: Initial Assessment
+a. Medical History and Symptom Inventory
+Collect Detailed History: Ask about the injury event, symptoms, and any previous concussions. Example: "Can you describe how the injury happened? Have you ever had a concussion before?"
+Symptom Checklist: Use standardized tools like the SCAT5 (Sport Concussion Assessment Tool) to record symptoms such as headaches, dizziness, nausea, and cognitive difficulties.
+b. Physical Examination
+Neurological Exam: Assess the patient's level of consciousness, pupil response, and motor function.
+Balance Tests: Perform balance assessments such as the Balance Error Scoring System (BESS) to check for postural stability.
+c. Cognitive Testing
+Immediate Post-Concussion Assessment and Cognitive Testing (ImPACT): Conduct baseline cognitive tests to evaluate memory, reaction time, and attention.
+Mini-Mental State Examination (MMSE): Use this for a quick assessment of cognitive function.
+d. Imaging Studies (if necessary)
+CT or MRI Scan: These are performed if there are red flags such as severe headache, repeated vomiting, or worsening symptoms.
+Step 2: Monitoring During Treatment
+a. Regular Symptom Monitoring
+Daily Symptom Logs: Have the patient keep a daily log of symptoms, rating them on a scale from 0 (none) to 6 (severe).
+Weekly Check-Ins: Schedule weekly visits to review symptom logs and make adjustments to the treatment plan.
+b. Cognitive and Physical Rest
+Rest Period: Ensure the patient gets plenty of rest and avoids activities that can exacerbate symptoms, such as reading or screen time.
+Gradual Return to Activity: Implement a stepwise approach to returning to normal activities. For example, start with light aerobic exercise like walking, and only progress to more intense activities as tolerated.
+c. Cognitive Testing Reassessment
+Periodic Cognitive Tests: Re-administer cognitive tests like ImPACT or MMSE at regular intervals (e.g., bi-weekly) to track improvements or detect any decline.
+Step 3: Post-Treatment Monitoring
+a. Final Assessment
+Symptom-Free Evaluation: Conduct a thorough assessment once the patient reports being symptom-free for at least 24-48 hours.
+Physical Examination and Balance Tests: Repeat the physical and balance assessments to ensure there are no lingering issues.
+b. Clearance for Return to Play/Work
+Graduated Return-to-Play Protocol: For athletes, follow a structured protocol that includes stages such as light aerobic exercise, sport-specific exercise, non-contact training drills, full-contact practice, and finally, return to play. Each stage should be at least 24 hours apart and only progressed if symptom-free.
+Workplace Adjustments: For non-athletes, make necessary adjustments to the work environment, such as reduced hours or modified tasks, and gradually return to full duties.
+Example Case Study
+Initial Assessment
+Patient: 20-year-old male soccer player
+Injury Event: Collision with another player, resulting in a fall and a hit to the head.
+Symptoms: Headache, dizziness, confusion, and sensitivity to light.
+Assessment: SCAT5 performed, revealing moderate symptoms; balance tests indicate slight instability; ImPACT shows below-baseline cognitive performance.
+Monitoring During Treatment
+First Week: The patient logs daily symptoms, which gradually decrease. Weekly check-in shows improvement in headaches but persistent dizziness.
+Second Week: Cognitive rest is emphasized. Re-assessment of ImPACT shows slight cognitive improvement.
+Third Week: Light aerobic exercise introduced; patient tolerates it well with minimal symptom increase.
+Fourth Week: Progression to sport-specific exercises without contact; symptoms are minimal.
+Post-Treatment Monitoring
+Fifth Week: Patient reports being symptom-free for 48 hours. Final assessment shows normal balance and cognitive function.
+Clearance: Patient follows the graduated return-to-play protocol, progressing through each stage symptom-free, and returns to full play after one week.
+Ongoing Monitoring
+Even after return to normal activities, it's important to continue monitoring the patient for any recurring symptoms. Schedule follow-up visits at one month, three months, and six months post-clearance to ensure long-term recovery and address any concerns.
+"""
+
 # Initialize the agent
 monitoring_agent = Agent(
     agent_name="Monitoring-Agent",
