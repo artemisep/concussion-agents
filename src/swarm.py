@@ -11,5 +11,9 @@ flow = "Diagnosis-Agent -> Treatment-Agent -> Monitoring-Agent, Recovery-Agent"
 
 # Using AgentRearrange class
 agent_system = AgentRearrange(agents=agents, flow=flow)
-output = agent_system.run("give instruction for diagnosis of concussion then provide treatment plan and then provide monitoring and recovery instructions")
+output = agent_system.run("""
+                          give instruction for diagnosis of concussion 
+                          then provide treatment plan and then provide 
+                          monitoring and recovery instructions
+                          """)
 print(output)
