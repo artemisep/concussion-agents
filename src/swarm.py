@@ -13,12 +13,13 @@ flow = "Symptom-Agent -> Diagnosis-Agent -> Treatment-Agent -> Monitoring-Agent,
 # Using AgentRearrange class
 agent_system = AgentRearrange(agents=agents, flow=flow)
 output = agent_system.run("""
-                          Do this step by steo, list the symptom of a student 
+                          Do this step by step, list the symptom of a student 
                           whose head hit the wall
-                          give instruction for diagnosis as to whether
+                          give detailed step by step instruction for diagnosis as to whether
                           the student have concussion and how severe it is. 
-                          Then provide treatment plan, give instructions on 
-                          what to monitor and how to manage recovery in this student's 
-                          daily life
+                          Then provide detailed, step by step treatment plan, describe in detail on 
+                          what to monitor each day and how to manage recovery
+                          in this student's 
+                          daily life and school activities
                           """)
 print(output)
